@@ -25,6 +25,17 @@ a:hover {
   color: rebeccapurple;
 }
 
+@media (max-width: 800px) {
+  .yout {
+    max-width: 400px;
+    max-height: 225px;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 .foot {
   background-color: #12172d;
   display: -webkit-box;
@@ -101,6 +112,17 @@ a:hover {
   color: rebeccapurple;
 }
 
+@media (max-width: 800px) {
+  .yout {
+    max-width: 400px;
+    max-height: 225px;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 .topBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,8 +162,13 @@ a:hover {
   padding-top: 5vh;
   background-image: url(/imgs/background.png);
   width: 100%;
-  height: 6000px;
-  max-height: 3000px;
+  height: 3400px;
+}
+
+@media (max-width: 800px) {
+  .mainBod {
+    height: 4000px;
+  }
 }
 
 .mainBod .mainBod1 {
@@ -243,6 +270,7 @@ a:hover {
 }
 
 .mainBod .mainBod2 .mCont2 li {
+  list-style-type: none;
   padding-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */
