@@ -11,7 +11,18 @@ rebeccapurple
   padding: 0;
   font-family: 'Quicksand', sans-serif;
   color: white;
-  font-size: 20px;
+}
+
+@media (max-width: 857px) {
+  * {
+    font-size: 15px;
+  }
+  * h1 {
+    font-size: 1.4rem;
+  }
+  * h2 {
+    font-size: 25px;
+  }
 }
 
 a {
@@ -98,7 +109,18 @@ rebeccapurple
   padding: 0;
   font-family: 'Quicksand', sans-serif;
   color: white;
-  font-size: 20px;
+}
+
+@media (max-width: 857px) {
+  * {
+    font-size: 15px;
+  }
+  * h1 {
+    font-size: 1.4rem;
+  }
+  * h2 {
+    font-size: 25px;
+  }
 }
 
 a {
@@ -128,7 +150,11 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   background-color: #12172d;
-  min-height: 8vh;
+  min-height: 6vh;
+  max-height: 8vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -145,14 +171,24 @@ html, body {
 }
 
 .topBar h1 {
-  font-size: 2rem;
-  padding-top: 1.5vh;
   color: #632244;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 857px) {
   .topBar h1 {
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 858px) {
+  .topBar h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .topBar h1 {
+    font-size: 2rem;
   }
 }
 
@@ -174,7 +210,7 @@ html, body {
 .mainBod .mainBod1 {
   padding-top: 80px;
   text-align: center;
-  background-image: url(/imgs/gradient2.png);
+  text-overflow: ellipsis;
 }
 
 .mainBod .mainBod1 h1 {
@@ -184,16 +220,16 @@ html, body {
 
 @media (max-width: 800px) {
   .mainBod .mainBod1 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .mainBod .mainBod1 h1 {
-    font-size: 40px;
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 801px) {
   .mainBod .mainBod1 {
-    font-size: 30px;
+    font-size: 2rem;
   }
 }
 
@@ -226,8 +262,9 @@ html, body {
   min-width: 300px;
   max-width: 1400px;
   text-align: center;
-  border-bottom: 5px;
-  border-color: aqua;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .mainBod .mainBod2 .mCont1 h2 {
@@ -247,6 +284,7 @@ html, body {
   padding-left: 50px;
   padding-right: 50px;
   max-width: 1400px;
+  min-width: 300px;
   text-align: center;
 }
 
@@ -264,7 +302,7 @@ html, body {
 }
 
 .mainBod .mainBod2 .mCont2 .mContList {
-  padding-top: 40px;
+  padding-top: 0px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -272,5 +310,9 @@ html, body {
 .mainBod .mainBod2 .mCont2 li {
   list-style-type: none;
   padding-top: 30px;
+}
+
+.mainBod .mainBod2 .mCont2 a {
+  font-size: 28px;
 }
 /*# sourceMappingURL=main.css.map */
