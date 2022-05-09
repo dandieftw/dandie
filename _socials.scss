@@ -1,0 +1,46 @@
+@import '_variables';
+@mixin goright {
+    translate: 50vh;
+}
+
+.foot{
+    background-color: $primary-color;
+    display: flex;
+    max-height: 150px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    .footLogo{
+        height: 150px;
+        width: 150px;
+    }
+    .footIcons{
+        a{
+            color: transparent;
+        }
+        i{
+            padding-right: 1rem;
+            &:hover{
+                @include transition-ease;
+                color: $accent-color;
+            }
+        }
+    }
+    p{
+        
+        
+        color: blanchedalmond;
+        font-size: x-large;
+        a{
+            color: blanchedalmond;
+            text-decoration: none;
+            &:hover{
+                @include transition-ease;
+                color: rebeccapurple;
+            }
+        }
+    }
+    
+    
+}
+

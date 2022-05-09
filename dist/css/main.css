@@ -1,73 +1,248 @@
 /* variables */
+/* dandie main colors: 
+#12172d -blueish
+#632244 -purpleish
+rebeccapurple
+*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  /*box-sizing: border-box;*/
   margin: 0;
   padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 20px;
 }
 
-.home {
-  height: 100%;
-  padding-top: 40vh;
-  overflow: hidden;
+a {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: rebeccapurple;
+}
+
+.foot {
+  background-color: #12172d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 150px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foot .footLogo {
+  height: 150px;
+  width: 150px;
+}
+
+.foot .footIcons a {
+  color: transparent;
+}
+
+.foot .footIcons i {
+  padding-right: 1rem;
+}
+
+.foot .footIcons i:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #632244;
+}
+
+.foot p {
+  color: blanchedalmond;
+  font-size: x-large;
+}
+
+.foot p a {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+
+.foot p a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: rebeccapurple;
+}
+
+/* variables */
+/* dandie main colors: 
+#12172d -blueish
+#632244 -purpleish
+rebeccapurple
+*/
+* {
+  /*box-sizing: border-box;*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: rebeccapurple;
+}
+
+.topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #12172d;
+  min-height: 8vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+  overflow-y: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: fixed;
+}
+
+.topBar .topLogo {
+  width: 75px;
+  height: 75px;
+}
+
+.topBar h1 {
+  font-size: 2rem;
+  padding-top: 1.5vh;
+  color: #632244;
+}
+
+@media (max-width: 650px) {
+  .topBar h1 {
+    font-size: 1.4rem;
+  }
+}
+
+.mainBod {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 5vh;
+  background-image: url(/imgs/background.png);
+  width: 100%;
+  height: 6000px;
+  max-height: 3000px;
+}
+
+.mainBod .mainBod1 {
+  padding-top: 80px;
+  text-align: center;
+  background-image: url(/imgs/gradient2.png);
+}
+
+.mainBod .mainBod1 h1 {
+  font-size: 50px;
+  color: blanchedalmond;
+}
+
+@media (max-width: 800px) {
+  .mainBod .mainBod1 {
+    font-size: 20px;
+  }
+  .mainBod .mainBod1 h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 801px) {
+  .mainBod .mainBod1 {
+    font-size: 30px;
+  }
+}
+
+.mainBod .mainBod1 p {
+  padding-top: 2vh;
+  padding: 5rem;
+}
+
+.mainBod .mainBod2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url(/imgs/bg.jpg);
-  background-size: cover;
 }
 
-body {
-  background: #272727;
-  color: #fff;
-  height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1;
-}
-
-h1, h2, h3 {
-  font-weight: 400;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  padding: 1rem;
-}
-
-main {
-  height: 100%;
-  width: 100%;
-}
-
-main .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .socials a {
-  padding: 1rem;
-}
-
-main .socials a:hover {
-  color: blanchedalmond;
-}
-
-footer {
-  font-size: 1rem;
-  bottom: 0.4rem;
+.mainBod .mainBod2 .mCont1 {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-width: 300px;
+  max-width: 1400px;
   text-align: center;
-  color: blanchedalmond;
+  border-bottom: 5px;
+  border-color: aqua;
+}
+
+.mainBod .mainBod2 .mCont1 h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  border-bottom: 3px;
+  color: rebeccapurple;
+}
+
+.mainBod .mainBod2 .mCont1 p {
+  text-align: center;
+  color: white;
+}
+
+.mainBod .mainBod2 .mCont2 {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1400px;
+  text-align: center;
+}
+
+.mainBod .mainBod2 .mCont2 h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  border-bottom: 3px;
+  color: rebeccapurple;
+}
+
+.mainBod .mainBod2 .mCont2 p {
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.mainBod .mainBod2 .mCont2 .mContList {
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.mainBod .mainBod2 .mCont2 li {
+  padding-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */
