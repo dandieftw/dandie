@@ -181,6 +181,138 @@ html, body {
   overflow-x: hidden;
 }
 
+.projBod {
+  padding-top: 80px;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.projBod h1 {
+  font-size: 50px;
+  color: blanchedalmond;
+}
+
+@media (max-width: 800px) {
+  .projBod {
+    font-size: 15px;
+  }
+  .projBod h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 801px) {
+  .projBod {
+    font-size: 2rem;
+  }
+}
+
+.projBod p {
+  padding-top: 2vh;
+  padding: 5rem;
+}
+
+.projCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom-style: inset;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-bottom-width: 5px;
+  border-radius: 5px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .projCont {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.projCont a {
+  font-size: 50px;
+}
+
+@media (max-width: 800px) {
+  .projCont a {
+    font-size: 25px;
+  }
+}
+
+.smoltxt {
+  font-size: 20px;
+}
+
+.projtxt {
+  border-bottom: 10px;
+  border-color: aqua;
+}
+
+.projLogo1 {
+  height: 200px;
+  width: 550px;
+}
+
+.projCont1 {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom-style: inset;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-bottom-width: 5px;
+  border-radius: 5px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+@media (max-width: 800px) {
+  .projCont1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.projCont1 a {
+  font-size: 50px;
+}
+
+@media (max-width: 800px) {
+  .projCont1 a {
+    font-size: 25px;
+  }
+}
+
+.projImg1 {
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;
+}
+
 .bG {
   z-index: -1;
   position: absolute;
