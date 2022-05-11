@@ -242,6 +242,20 @@ html, body {
   }
 }
 
+@media (max-width: 1200px) {
+  .projCont {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .projCont {
+    margin-left: 700px;
+    margin-right: 700px;
+  }
+}
+
 .projCont a {
   font-size: 50px;
 }
@@ -263,7 +277,7 @@ html, body {
 
 .projLogo1 {
   height: 200px;
-  width: 550px;
+  width: 600px;
 }
 
 .projCont1 {
@@ -297,6 +311,20 @@ html, body {
   }
 }
 
+@media (max-width: 1200px) {
+  .projCont1 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .projCont1 {
+    margin-left: 560px;
+    margin-right: 560px;
+  }
+}
+
 .projCont1 a {
   font-size: 50px;
 }
@@ -307,10 +335,34 @@ html, body {
   }
 }
 
+.projCont1 a .link {
+  font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+  .projCont1 a .link {
+    font-size: 16px;
+  }
+}
+
 .projImg1 {
+  padding-top: 30px;
   width: 500px;
   height: 300px;
   border-radius: 5%;
+}
+
+@media (max-width: 800px) {
+  .projImg1 {
+    width: 400px;
+    height: 240px;
+  }
+}
+
+.projImg2 {
+  padding-top: 30px;
+  width: 50%;
+  height: 50%;
 }
 
 .bG {

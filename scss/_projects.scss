@@ -24,6 +24,7 @@
     }
 }
 .projCont{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,6 +39,14 @@
     @media (max-width:$mobile) {
         margin-left: 20px;
         margin-right: 20px;
+    }
+    @media (max-width:$dekstop1) {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    @media (min-width:$desktop2) {
+        margin-left: 700px;
+        margin-right: 700px;
     }
     a{
         font-size: 50px;
@@ -56,7 +65,7 @@
 }
 .projLogo1{
     height: 200px;
-    width: 550px;
+    width: 600px;
 
 }
 .projCont1{
@@ -76,16 +85,39 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+    @media (max-width:$dekstop1) {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    @media (min-width:$desktop2) {
+        margin-left: 560px;
+        margin-right: 560px;
+    }
     a{
         font-size: 50px;
         @media (max-width:$mobile) {
             font-size: 25px;
         }
-    }
-    
+        .link{
+            font-size: 2rem;
+        @media (max-width:$mobile) {
+            font-size: 16px;
+        }
+        }
+    }  
 }
 .projImg1{
+    padding-top: 30px;
     width: 500px;
     height: 300px;
     border-radius: 5%;
+    @media (max-width: $mobile){
+        width: 400px;
+        height: 240px;
+    }
+}
+.projImg2{
+    padding-top: 30px;
+    width: 50%;
+    height: 50%;
 }
