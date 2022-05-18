@@ -99,8 +99,6 @@ i {
   max-height: 150px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -639,5 +637,34 @@ i {
 
 .mainBod .mainBod2 .mCont2 a {
   font-size: 28px;
+}
+
+.mainCont {
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+  -ms-grid-columns: (0.5fr)[2];
+      grid-template-columns: repeat(2, 0.5fr);
+  background-color: #2a2e35;
+}
+
+.mainCont .grid2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainCont .grid2 p {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
