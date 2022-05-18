@@ -4,6 +4,22 @@
 #632244 -purpleish
 rebeccapurple
 */
+/*
+            for all your media needs you baad bad boy ;)
+
+@media (max-width: $smol-mobile){
+
+        }
+        @media (min-width: $mobile){
+            
+        }
+        @media (min-width: $dekstop1){
+            
+        }
+        @media (min-width: $desktop2){
+            
+        }
+*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
 * {
   /*box-sizing: border-box;*/
@@ -26,6 +42,8 @@ rebeccapurple
 }
 
 a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: palevioletred;
   text-decoration: none;
 }
@@ -36,7 +54,7 @@ a:hover {
   color: rebeccapurple;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .yout {
     max-width: 400px;
     max-height: 225px;
@@ -45,6 +63,32 @@ a:hover {
 
 html, body {
   overflow-x: hidden;
+}
+
+i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 2vw;
+  padding-bottom: 20px;
+  color: blanchedalmond;
+}
+
+@media (max-width: 450px) {
+  .arrow i {
+    font-size: 20px;
+  }
+}
+
+.arrow i:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 4vw;
+  color: palevioletred;
 }
 
 .foot {
@@ -63,8 +107,16 @@ html, body {
 }
 
 .foot .footLogo {
-  height: 150px;
-  width: 150px;
+  padding-top: 15px;
+  height: 90px;
+  width: 90px;
+}
+
+@media (max-width: 450px) {
+  .foot .footLogo {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 .foot .footIcons a {
@@ -72,7 +124,31 @@ html, body {
 }
 
 .foot .footIcons i {
-  padding-right: 1rem;
+  padding-right: 0.6rem;
+}
+
+@media (max-width: 450px) {
+  .foot .footIcons i {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 601px) {
+  .foot .footIcons i {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .foot .footIcons i {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 2000px) {
+  .foot .footIcons i {
+    font-size: 2vw;
+  }
 }
 
 .foot .footIcons i:hover {
@@ -83,12 +159,59 @@ html, body {
 
 .foot p {
   color: blanchedalmond;
-  font-size: x-large;
+}
+
+@media (min-width: 2000px) {
+  .foot p {
+    padding-left: 7.5vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .foot p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 601px) {
+  .foot p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .foot p {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 2000px) {
+  .foot p {
+    font-size: 2vw;
+  }
 }
 
 .foot p a {
   color: blanchedalmond;
   text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  .foot p a {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 601px) {
+  .foot p a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .foot p a {
+    font-size: 2vw;
+  }
 }
 
 .foot p a:hover {
@@ -101,7 +224,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #12172d;
+  background-color: rgba(18, 23, 45, 0.95);
   min-height: 6vh;
   max-height: 8vh;
   height: 10vh;
@@ -111,7 +234,7 @@ html, body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   position: fixed;
@@ -129,8 +252,9 @@ html, body {
 }
 
 .topBar .topLogo {
-  width: 75px;
-  height: 75px;
+  padding-top: 3px;
+  width: 60px;
+  height: 60px;
 }
 
 /* variables */
@@ -138,6 +262,22 @@ html, body {
 #12172d -blueish
 #632244 -purpleish
 rebeccapurple
+*/
+/*
+            for all your media needs you baad bad boy ;)
+
+@media (max-width: $smol-mobile){
+
+        }
+        @media (min-width: $mobile){
+            
+        }
+        @media (min-width: $dekstop1){
+            
+        }
+        @media (min-width: $desktop2){
+            
+        }
 */
 * {
   /*box-sizing: border-box;*/
@@ -160,6 +300,8 @@ rebeccapurple
 }
 
 a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: palevioletred;
   text-decoration: none;
 }
@@ -170,7 +312,7 @@ a:hover {
   color: rebeccapurple;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .yout {
     max-width: 400px;
     max-height: 225px;
@@ -179,6 +321,11 @@ a:hover {
 
 html, body {
   overflow-x: hidden;
+}
+
+i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projBod {
@@ -192,7 +339,7 @@ html, body {
   color: blanchedalmond;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .projBod {
     font-size: 15px;
   }
@@ -235,7 +382,7 @@ html, body {
   padding-bottom: 30px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .projCont {
     margin-left: 20px;
     margin-right: 20px;
@@ -260,7 +407,7 @@ html, body {
   font-size: 50px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .projCont a {
     font-size: 25px;
   }
@@ -304,7 +451,7 @@ html, body {
   margin-right: 200px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .projCont1 {
     margin-left: 20px;
     margin-right: 20px;
@@ -329,7 +476,7 @@ html, body {
   font-size: 50px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .projCont1 a {
     font-size: 25px;
   }
@@ -339,7 +486,7 @@ html, body {
   font-size: 2rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .projCont1 a .link {
     font-size: 16px;
   }
@@ -352,7 +499,7 @@ html, body {
   border-radius: 5%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .projImg1 {
     width: 400px;
     height: 240px;
@@ -366,17 +513,12 @@ html, body {
 }
 
 .bG {
-  z-index: -1;
-  position: absolute;
+  background-image: url(/imgs/background.png);
+  background-size: cover;
+  height: 100%;
   width: 100%;
-  height: auto;
-  height: 4000px;
-}
-
-@media (max-width: 800px) {
-  .bG {
-    height: 4000px;
-  }
+  z-index: -1;
+  background-attachment: fixed;
 }
 
 .mainBod {
@@ -384,13 +526,10 @@ html, body {
           box-sizing: border-box;
   padding-top: 5vh;
   width: 100%;
-  height: 4000px;
 }
 
-@media (max-width: 800px) {
-  .mainBod {
-    height: 4000px;
-  }
+.mainBod .up {
+  padding-left: 50px;
 }
 
 .mainBod .mainBod1 {
@@ -404,7 +543,7 @@ html, body {
   color: blanchedalmond;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 601px) {
   .mainBod .mainBod1 {
     font-size: 15px;
   }

@@ -1,13 +1,13 @@
 .topBar{
     display: flex;
-    background-color: $primary-color;
+    background-color: rgba( #12172d, $alpha: 0.95);
     min-height: 6vh;
     max-height: 8vh;
     height: 10vh;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
     flex-shrink: 0;
     position: fixed;
 
@@ -23,8 +23,9 @@
     }
 
     .topLogo{
-        width: 75px;
-        height: 75px;
+        padding-top: 3px;
+        width: 60px;
+        height: 60px;
     }
     
 }

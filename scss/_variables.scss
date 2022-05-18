@@ -5,6 +5,27 @@
 rebeccapurple
 */
 
+/*
+            for all your media needs you baad bad boy ;)
+
+@media (max-width: $smol-mobile){
+
+        }
+        @media (min-width: $mobile){
+            
+        }
+        @media (min-width: $dekstop1){
+            
+        }
+        @media (min-width: $desktop2){
+            
+        }
+*/
+
+
+
+
+
 $primary-color: #12172d;
 $accent-color: #632244;
 $accent-color2: rebeccapurple;
@@ -15,7 +36,8 @@ $font-weights: (
     "medium" : 500,
     "bold" : 700,
 );
-$mobile: 800px;
+$smol-mobile: 450px;
+$mobile: 601px;
 $dekstop1: 1200px;
 $desktop2: 2000px;
 
@@ -45,6 +67,7 @@ $desktop2: 2000px;
 }
 
 a{
+    @include transition-ease;
     color: palevioletred;
     text-decoration: none;
     &:hover{
@@ -60,4 +83,7 @@ a{
 }
 html,body{
     overflow-x: hidden;
+}
+i{
+    @include transition-ease;
 }

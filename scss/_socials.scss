@@ -3,6 +3,24 @@
     translate: 50vh;
 }
 
+.arrow{
+    i{  
+        @include transition-ease;
+        @media (max-width: $smol-mobile){
+            font-size: 20px;
+        }
+        font-size: 2vw;
+        padding-bottom: 20px;
+        color: blanchedalmond;
+        &:hover{
+            @include transition-ease;
+            font-size: 4vw;
+            color: palevioletred;
+
+        }       
+    }
+}
+
 .foot{
     background-color: $primary-color;
     display: flex;
@@ -11,15 +29,32 @@
     box-sizing: border-box;
     align-items: center;
     .footLogo{
-        height: 150px;
-        width: 150px;
+        padding-top: 15px;
+        height: 90px;
+        width: 90px;
+        @media (max-width: $smol-mobile){
+            height: 70px;
+            width: 70px;
+        }
     }
     .footIcons{
         a{
             color: transparent;
         }
         i{
-            padding-right: 1rem;
+            @media (max-width: $smol-mobile){
+                font-size: 15px;
+            }
+            @media (min-width: $mobile){
+                font-size: 20px;
+            }
+            @media (min-width: $dekstop1){
+                font-size: 2vw;
+            }
+            @media (min-width: $desktop2){
+                font-size: 2vw;
+            }
+            padding-right: 0.6rem;
             &:hover{
                 @include transition-ease;
                 color: $accent-color;
@@ -27,11 +62,34 @@
         }
     }
     p{
-        
-        
+        @media (min-width: $desktop2){
+            padding-left: 7.5vw;
+        }
         color: blanchedalmond;
-        font-size: x-large;
+        
+        @media (max-width: $smol-mobile){
+            font-size: 15px;
+        }
+        @media (min-width: $mobile){
+            font-size: 20px;
+        }
+        @media (min-width: $dekstop1){
+            font-size: 2vw;
+        }
+        @media (min-width: $desktop2){
+            font-size: 2vw;
+        }
+
         a{
+            @media (max-width: $smol-mobile){
+                font-size: 15px;
+            }
+            @media (min-width: $mobile){
+                font-size: 20px;
+            }
+            @media (min-width: $dekstop1){
+                font-size: 2vw;
+            }
             color: blanchedalmond;
             text-decoration: none;
             &:hover{
