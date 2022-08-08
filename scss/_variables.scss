@@ -20,6 +20,22 @@ rebeccapurple
         @media (min-width: $desktop2){
             
         }
+    }
+*/
+
+
+/*add gradiet
+ background-color: $accent-color;
+        background-image: linear-gradient(to top, rebeccapurple 0%, $accent-color 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
 */
 
 
@@ -37,7 +53,7 @@ $font-weights: (
     "bold" : 700,
 );
 $smol-mobile: 450px;
-$mobile: 601px;
+$mobile: 800px;
 $dekstop1: 1200px;
 $desktop2: 2000px;
 
@@ -55,10 +71,14 @@ $desktop2: 2000px;
             
        
         h2{
-            font-size: 25px;
+            font-size: 2rem;
         } 
     }
-    
+    ul, li{
+        text-decoration: none;
+        list-style: none;
+        list-style-type: none;
+    }
     
 }
 
