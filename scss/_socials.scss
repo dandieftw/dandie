@@ -4,17 +4,21 @@
 }
 
 .arrow{
+    z-index: 1;
+   
+   
     i{  
         @include transition-ease;
         @media (max-width: $smol-mobile){
             font-size: 20px;
         }
         font-size: 2vw;
+        padding-top: 20px;
         padding-bottom: 20px;
         color: blanchedalmond;
         &:hover{
             @include transition-ease;
-            font-size: 4vw;
+            
             color: palevioletred;
 
         }       
@@ -26,7 +30,7 @@
     display: flex;
     max-height: 150px;
     justify-content: space-around;
-    box-sizing: border-box;
+   
     align-items: center;
     .footLogo{
         padding-top: 15px;

@@ -3,10 +3,11 @@
 @import '_variables';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 @import '_projects';
-@import '_nu';
+
 .bG{
     background-image: url(/imgs/background.png);
     background-size: cover;
+    min-height: 1440px;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -25,10 +26,20 @@
     .mainBod1{
         padding-top: 80px;
         text-align: center;
-        text-overflow: ellipsis;
+        
         h1{
             font-size: 50px;
-            color: blanchedalmond;
+            background-color: $accent-color;
+        background-image: linear-gradient(to bottom, rebeccapurple 0%, $accent-color 120%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
         }
         
         @media (max-width: $mobile) {  
@@ -44,73 +55,142 @@
             padding-top: 2vh;
             padding: 5rem;
         }
-    }
-    .mainBod2{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        
-        
-
-        .mCont1{
-            padding-top: 30px;
-            padding-left: 50px;
-            padding-right: 50px;
-            min-width: 300px;
-            max-width: 1400px;
-            text-align: center;
-            height: fit-content;
-            h2{
-                font-size: 30px;
-                text-decoration: underline;
-                border-bottom: 3px;
-                color: $accent-color2;
-
-            }
-            p{
+        .welcomeText {
+            background-color: rgba(#632244, 0.3);
+            margin: 5vh 10vw 5vh 10vw;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            
+            .welcomeText1{
                 text-align: center;
-                color: white;
+                p{
+                    font-size: 3vh;
+                }
             }
         }
-        
-        .mCont2{
-
-            padding-top: 50px;
-            padding-left: 50px;
-            padding-right: 50px;
-            max-width: 1400px;
-            min-width: 300px;
-            text-align: center;
-            h2{
-                font-size: 30px;
-                text-decoration: underline;
-                border-bottom: 3px;
-                color: $accent-color2;
-
-            }
-            p{
-                text-align: center;
-                color: white;
-                padding-bottom: 30px;
-            }
-            .mContList{
-                padding-top: 0px;
-                padding-left: 50px;
-                padding-right: 50px;
-                
-            }
-            li{
-                list-style-type: none;
-                padding-top: 30px;
-            }
-            a{
-                font-size: 28px;
-            }
-            
-            
+    }
+}
+.mainCont{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    
+    
+    @media(max-width: $mobile) {
+        grid-template-columns: 100%;
+    }
+    @media (min-width: 801px){
         
     }
+    @media (min-width: 1201px){
+        justify-content: center;
+        grid-template-columns: 0.4fr 0.4fr;
+        .gridColSpan2{
+            grid-column: span 2;
+        }
+        .gridRowSpan2{
+            grid-row: span 2;
+        }
+    }
 
-}}
+    
+
+    .grid2{
+        
+        background-color: rgba(18, 23, 45, 0.8);
+        border-radius: 10px;
+        
+        padding: 20px;
+        
+        h2{
+            padding: 10px;
+            text-align: center;
+            color: palevioletred;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        .standoutText {
+            text-align: center;
+            p{
+                text-align: center;
+
+            }
+        }
+    }
+    .grid3{
+        text-align: center;
+        background-color: rgba(18, 23, 45, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        min-height: 240px;
+        p{
+            text-align: justify;
+            padding: 0.5rem;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            font-size: 2rem;
+        }
+        .yout{
+            margin: 3px;
+            @media (max-width: $mobile){
+               width: 100%; 
+            }
+            @media (min-width: $dekstop1){
+                width: 80%;
+            }
+            
+        }
+        .standoutText {
+            text-align: center;
+            padding: 10px;
+            p{
+                text-align: center;
+
+            }
+        }
+        img{
+            width: 130px;
+
+        }
+    }
+    .grid4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(18, 23, 45, 0.8);
+        border-radius: 10px;
+        
+        padding: 20px;
+        
+        h2{
+            padding: 10px;
+            text-align: center;
+            color: palevioletred;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        .standoutText {
+            text-align: center;
+            p{
+                text-align: center;
+
+            }
+        }
+        a{
+            font-size: 2rem;
+        }
+    }
+    
+}
+

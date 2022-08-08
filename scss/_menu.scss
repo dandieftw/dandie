@@ -19,6 +19,9 @@
                 @include transition-ease;
                 color: whitesmoke;
             }
+            &:active{
+                color: $accent-color;
+            }
         }
     }
 
