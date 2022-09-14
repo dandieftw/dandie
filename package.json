@@ -1,0 +1,24 @@
+{
+  "name": "dandie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --output-style compressed --source-map true --source-map-contents true --output dist/css scss",
+    "watch": "node-sass --output-style compressed --source-map true --source-map-contents true --output dist/css scss --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandieftw/dandie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dandieftw/dandie/issues"
+  },
+  "homepage": "https://github.com/dandieftw/dandie#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
